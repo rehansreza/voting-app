@@ -1,0 +1,13 @@
+# Angular
+poll-app/node_modules/
+poll-app/dist/
+poll-app/.angular/
+
+# Spring Boot
+votingapp/target/
+votingapp/*.jar
+votingapp/*.war
+
+# Common
+.env
+*.env.local
