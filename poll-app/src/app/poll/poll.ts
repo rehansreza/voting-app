@@ -61,7 +61,8 @@ export class Poll implements OnInit {
   createPoll(form:any) {
     this.pollService.createPoll(this.newPoll).subscribe({
       next: (createdPoll) => {
-        this.polls.push(createdPoll);
+        //this.polls.push(createdPoll);
+         this.loadPolls();
         this.resetPoll();
         form.resetForm();  
       },
