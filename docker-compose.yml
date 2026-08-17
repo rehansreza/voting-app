@@ -6,7 +6,7 @@ services:
     container_name: mysql-db
     environment:
       MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: voting-app
+      MYSQL_DATABASE: votingApp
     ports:
       - "3306:3306"
     healthcheck:
@@ -24,7 +24,7 @@ services:
       mysql:
         condition: service_healthy
     environment:
-      SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/voting-app
+      SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/votingApp
       SPRING_DATASOURCE_USERNAME: root
       SPRING_DATASOURCE_PASSWORD: root
     ports:

@@ -5,7 +5,7 @@ FROM eclipse-temurin:17-jdk-alpine
 WORKDIR /app
 
 # Copy the Spring Boot JAR (adjust name if needed)
-COPY target/votingapp-*.jar app.jar
+COPY target/*.jar app.jar
 
 # Expose backend port
 EXPOSE 8090
